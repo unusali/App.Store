@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --app-number-font: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: 'DM Sans', 'Hind Siliguri', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #0f172a;
+    background-color: #f8fafc;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Plus Jakarta Sans', 'Hind Siliguri', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  code, pre, .font-mono, .font-number {
+    font-family: var(--app-number-font);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-family: var(--app-number-font);
+  font-variant-numeric: tabular-nums;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-branded-canvas,
+  #printable-branded-canvas * {
+    visibility: visible;
+  }
+  #printable-branded-canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}

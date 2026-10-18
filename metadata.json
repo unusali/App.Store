@@ -1,0 +1,8 @@
+{
+  "name": "UTechtips DocuForge — Document Intelligence & Branded Synthesis",
+  "description": "Enterprise OCR extraction, multi-format AI document synthesis, custom brand kit studio, and full-stack architecture blueprint backed by Cloud SQL PostgreSQL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
